@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>¡Bienvenidos a Mi Perfil Personal!</h1>
+        <p>Descubre más sobre mí, interactúa y diviértete.</p>
+    </header>
+
+    <section>
+        <h2>Información Básica</h2>
+        <p><strong>Nombre:</strong> Andrew Tang Campos</p>
+        <p><strong>Edad:</strong> 23 años</p>
+        <p><strong>Intereses:</strong> Tecnología, Programación, Fútbol</p>
+        <p><strong>Pasatiempos:</strong> Leer, Jugar videojuegos, Ver series</p>
+        <p><strong>Comida favorita:</strong> Pizza</p>
+        <p><strong>Color favorito:</strong> Azul</p>
+    </section>
+
+    <section>
+        <h2>Datos Curiosos Sobre Mí</h2>
+        <ul>
+            <li>Nunca he viajado fuera del país.</li>
+            <li>Me encanta resolver rompecabezas.</li>
+            <li>Puedo tocar la guitarra.</li>
+        </ul>
+        <button class="boton-me-gusta" data-section="curiosidades">Me gusta (<span id="like-curiosidades">0</span>)</button>
+    </section>
+
+    <section>
+        <h2>Mi Cita Favorita</h2>
+        <blockquote>"El éxito es la suma de pequeños esfuerzos repetidos día tras día." - Robert Collier</blockquote>
+        <button class="boton-me-gusta" data-section="cita">Me gusta (<span id="like-cita">0</span>)</button>
+    </section>
+
+    <section>
+        <h2>Mi Lema de Vida</h2>
+        <p>"Vive cada día como si fuera el último."</p>
+        <button class="boton-me-gusta" data-section="lema">Me gusta (<span id="like-lema">0</span>)</button>
+    </section>
+
+    <section>
+        <h2>Mis Superpoderes Secretos</h2>
+        <ul>
+            <li>Puedo recordar detalles muy pequeños.</li>
+            <li>Resolución rápida de problemas técnicos.</li>
+            <li>Siempre mantengo la calma en situaciones difíciles.</li>
+        </ul>
+        <button class="boton-me-gusta" data-section="superpoderes">Me gusta (<span id="like-superpoderes">0</span>)</button>
+    </section>
+
+    <section class="comentarios">
+        <h2>Deja un comentario</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <textarea placeholder="Escribe tu comentario aquí..." rows="5" required></textarea>
+            <button type="submit">Enviar comentario</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Gracias por visitar mi perfil. ¡Espero que te haya gustado!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004d80;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+header p {
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-100px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #004d80;
+    text-align: center;
+}
+
+.boton-me-gusta {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+.boton-me-gusta:hover {
+    background-color: #e05142;
+}
+
+.comentarios {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.comentarios button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.comentarios button:hover {
+    background-color: #e05142;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004d80;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Estilo interactivo para el botón */
+.boton-me-gusta {
+    position: relative;
+}
+
+.boton-me-gusta:after {
+    content: '👍';
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 1.5em;
+    color: #e05142;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.boton-me-gusta:hover:after {
+    opacity: 1;
+    top: -10px;
+}
+
+/* Transiciones y animaciones */
+.comentarios input, .comentarios textarea {
+    transition: box-shadow 0.3s ease;
+}
+
+.comentarios input:focus, .comentarios textarea:focus {
+    box-shadow: 0 0 10px rgba(0, 128, 192, 0.5);
+}
+
+/* Efecto de hover en las secciones */
+section:hover h2 {
+    color: #ff6f61;
+}
